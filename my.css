@@ -34,3 +34,15 @@ vertical-align: middle;
     display: block;
     margin: auto;
 }
+
+a {
+color:#3399FF;
+font-weight: bold; 
+text-decoration:none; 
+}
+
+/* a:hover {
+    color:#4499EE;
+    text-decoration:none;
+    border-bottom: 1px #0099CC dotted;
+} */
