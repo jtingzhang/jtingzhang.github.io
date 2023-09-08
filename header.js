@@ -1,0 +1,1 @@
+document.writeln("<!-- Google tag (gtag.js) -->\n<script async src='https://www.googletagmanager.com/gtag/js?id=G-NBFQ61531L'></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-NBFQ61531L', {cookie_flags: 'SameSite=None;Secure'});\n</script>");
