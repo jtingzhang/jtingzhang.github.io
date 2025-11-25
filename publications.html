@@ -1,209 +1,245 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head> 
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<title>Jianting Zhang</title>
-<link rel ="stylesheet" href ="my.css" type="text/css" />
-<script src="/header.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Jianting Zhang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; color: #333; padding-top: 2rem; padding-bottom: 3rem; }
+        
+        .main-container { max-width: 900px; margin: 0 auto; background: #fff; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        
+        a { text-decoration: none; color: #0d6efd; }
+        a:hover { text-decoration: underline; }
+        
+        /* Headers */
+        .year-header { font-size: 1.5rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; color: #333; }
+        
+        /* Publication Item */
+        .pub-item { margin-bottom: 2rem; }
+        .pub-title { font-weight: 600; font-size: 1.1rem; display: block; margin-bottom: 6px; color: #000; line-height: 1.4; }
+        .pub-authors { color: #555; margin-bottom: 6px; font-size: 0.95rem; }
+        .pub-venue { font-style: italic; color: #0056b3; font-size: 0.95rem; }
+        
+        /* Buttons & Badges */
+        .btn-pub { font-size: 0.75rem; padding: 2px 10px; margin-left: 8px; border-radius: 4px; text-decoration: none !important; color: white !important; display: inline-block; vertical-align: middle; }
+        .btn-pdf { background-color: #dc3545; }
+        .btn-pdf:hover { background-color: #bb2d3b; }
+        .btn-code { background-color: #212529; }
+        .btn-code:hover { background-color: #424649; }
+        .btn-talk { background-color: #6c757d; }
+        .btn-talk:hover { background-color: #5c636a; }
+        
+        .badge-tag { font-size: 0.75rem; vertical-align: middle; margin-left: 8px; padding: 5px 8px; }
+    </style>
 </head>
-</td></tr>
+<body>
 
-<tr><td colspan="3">
-<h3>2025</h3>
-<p>
-	<ul>
-		<li>
-			<a href="http://jtingzhang.github.io/publications/lifefin.pdf">Lifefin: Escaping Mempool Explosions in DAG-based BFT </a>
-			<br/>
-			<b>Jianting Zhang</b>, Sen Yang, Alberto Sonnino, Sebastián Loza, Aniket Kate
-			<br/>
-			<i>Preprint</i>, 2025.
-		</li>
-		<br/>
-		<li>
-			<a href="http://jtingzhang.github.io/publications/beluga.pdf">Beluga: Block Synchronization for BFT Consensus Protocols </a>
-			<br/>
-			<span style="color:#e12749"> (Adopted by Sui)</span> 
-			<br/>
-			<b>Jianting Zhang</b>, Lefteris Kokoris-Kogias, Tasos Kichidis, Arun Koshy, Mingwei Tian, Ilya Sergey, Alberto Sonnino
-			<br/>
-			<i>(*random order*)</i>
-			<br/>
-			<i>Preprint</i>, 2025.
-		</li>
-		<br/>
-		<li>
-			<a href="https://eprint.iacr.org/2024/1496">No Fish Is Too Big for Flash Boys! Frontrunning on DAG-based Blockchains</a> <a href="https://github.com/EtherCS/DAGFrontrunning-artifact"><span style="color:#8e8be6">[code]</span></a>
-			<br/>
-			<b>Jianting Zhang</b>, Aniket Kate
-			<br/>
-			<i>Annual Computer Security Applications Conference (<b>ACSAC</b>)</i>, 2025.
-			<br/>
-			<i>The Science of Blockchain Conference (<b>SBC</b>)</i>, 2025.
-			<br/>
-			<i>The Latest in DeFi Research (<b>TLDR</b>)</i>, 2025.
-		</li>
-		<br/>
-		<li>
-			<a href="https://arxiv.org/abs/2406.08252">Optimal Sharding for Scalable Blockchains with Deconstructed SMR</a> <a href="https://github.com/EtherCS/arete"><span style="color:#8e8be6">[code]</span></a>
-			<br/>
-			<span style="color:#e12749"> (Adopted by Supra)</span> 
-			<br/>
-			<b>Jianting Zhang</b>, Zhongtang Luo, Raghavendra Ramesh, Aniket Kate
-			<br/>
-			<i>51st International Conference on Very Large Data Bases (<b>VLDB</b>)</i>, 2025. 
-		</li>
-		<br/>
-		<li>
-			<a href="https://ieeexplore.ieee.org/abstract/document/11218168">Scaling Blockchain via Dynamic Sharding</a>
-			<br/>
-			<b>Jianting Zhang</b>, Zicong Hong, Xiaoyu Qiu, Yufeng Zhan, Song Guo, Wuhui Chen
-			<br/>
-			<i>IEEE Transactions on Dependable and Secure Computing (<b>TDSC</b>)</i>, 2025.
-		</li>
-		<br/>
-		<li>
-			<a href="https://arxiv.org/abs/2509.10755">Five Minutes of DDoS Brings down Tor: DDoS Attacks on the Tor Directory Protocol and Mitigations</a>
-			<br/>
-			Zhongtang Luo, <b>Jianting Zhang</b>, Akshat Neerati, Aniket Kate
-			<br/>
-			<i>Preprint</i>, 2025.
-		</li>
-		<br/>
-		<li>
-			<a href="https://ieeexplore.ieee.org/document/11218953">RapidSnail: Improve Scalability of Blockchain under High Contention Workload</a>
-			<br/>
-			Junyi Wen, Wuhui Chen, <b>Jianting Zhang</b>, Xiao Chen, Ting Cai, Hong-Ning Dai
-			<br/>
-			<i>IEEE Transactions on Computers (<b>TC</b>)</i>, 2025.
-		</li>
-		<br/>
-		<li>
-			<a href="http://jtingzhang.github.io/publications/arxiv_PDF_Obfuscation.pdf">All Our TeX Source Are Not Belong to You: PDF Obfuscation against arXiv's TeX Source Policies</a>
-			<br/>
-			Zhongtang Luo, <b>Jianting Zhang</b>
-			<br/>
-			<i>Preprint</i>, 2025.
-		</li>
-		<br/>
-	</ul>
-</p>
+<div class="container">
+    <div class="main-container">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <h1 class="fw-bold m-0">Full Publication List</h1>
+            <a href="index.html" class="btn btn-outline-primary btn-sm"><i class="fas fa-arrow-left me-2"></i>Back to Home</a>
+        </div>
 
-<tr><td colspan="3">
-<h3>2024</h3>
-<p>
-	<ul>
-		<li>
-			<a href="https://arxiv.org/abs/2306.06299">Front-running Attack in Sharded Blockchains and Fair Cross-shard Consensus</a> <a href="https://www.youtube.com/watch?v=7CrIt6NqohE"><span style="color:#8e8be6">[talk]</span></a>
-			<br/>
-			<b>Jianting Zhang</b>, Wuhui Chen, Sifu Luo, Tiantian Gong, Zicong Hong, Aniket Kate
-			<br/>
-			<i>31st Network and Distributed System Security Symposium (<b>NDSS</b>)</i>, 2024. 
-		</li>
-		<br/>
-		<li>
-			<a href="https://ieeexplore.ieee.org/document/10436534">Efficient Execution of Arbitrarily Complex Cross-shard Contracts for Blockchain Sharding</a>
-			<br/>
-			<b>Jianting Zhang</b>, Wuhui Chen, Zicong Hong, Gang Xiao, Linlin Du, Zibin Zheng
-			<br/>
-			<i>IEEE Transactions on Computers (<b>TC</b>)</i>, 2024.
-		</li>
-		<br/>
-		<li>
-			<a href="https://ieeexplore.ieee.org/abstract/document/10597933">Porygon: Scaling Blockchain via 3D Parallelism</a>
-			<br/>
-			Wuhui Chen, Ding Xia, Zhongteng Cai, Hong-Ning Dai, <b>Jianting Zhang</b>, Zicong Hong, Zibin Zheng
-			<br/>
-			<i>40th International Conference on Data Engineering (<b>ICDE</b>)</i>, 2024.
-		</li>
-		<br/>
-		<li>
-			<a href="https://ieeexplore.ieee.org/document/10621379">Auncel: Fair Byzantine Consensus Protocol with High Performance</a>
-			<br/>
-			Wuhui Chen, Yikai Feng, <b>Jianting Zhang</b>, Zhongteng Cai, Hong-Ning Dai, Zibin Zheng
-			<br/>
-			<i>43rd IEEE International Conference on Computer Communications (<b>INFOCOM</b>)</i>, 2024.
-		</li>
-		<br/>
-		<li>
-			<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10816245">SPARROW: Expediting Smart Contract Execution for Blockchain Sharding via Inter-shard Caching</a>
-			<br/>
-			Junyuan Liang, Peiyuan Yao, Wuhui Chen, Zicong Hong, <b>Jianting Zhang</b>, Ting Cai, Min Sun, Zibin Zheng
-			<br/>
-			<i>IEEE Transactions on Parallel and Distributed Systems (<b>TPDS</b>)</i>, 2024.
-		</li>
-		<br/>
-		<li>
-			<a href="https://ieeexplore.ieee.org/document/10468552">SmartChain: A Dynamic and Self-Adaptive Sharding Framework for IoT Blockchain</a>
-			<br/>
-			Ting Cai, Wuhui Chen, <b>Jianting Zhang</b>, Zibin Zheng
-			<br/>
-			<i>IEEE Transactions on Services Computing (<b>TSC</b>)</i>, 2024.
-		</li>		
-	</ul>
-</p>
+        <div class="year-header" style="margin-top: 0;">2025</div>
 
-<tr><td colspan="3">
-<h3>2023</h3>
-<p>
-	<ul>
-		<li>
-			<a href="https://link.springer.com/chapter/10.1007/978-3-031-48421-6_27">Enhancing Blockchain Performance via On-chain and Off-chain Collaboration</a>
-			<br/>
-			Wuhui Chen, Zhaoxian Yang, <b>Jianting Zhang</b>, Junyuan Liang, Qilin Sun, Fan Zhou
-			<br/>
-			<i>21st International Conference on Service-Oriented Computing (<b>ICSOC</b>)</i>, 2023.
-		</li>
-		<br/>
-		<li>
-			<a href="https://arxiv.org/abs/2304.08595">PROPHET: Conflict-Free Sharding Blockchain via Byzantine-Tolerant Deterministic Ordering </a>
-			<br/>
-			Zicong Hong, Song Guo, Enyuan Zhou, <b>Jianting Zhang</b>, Wuhui Chen, Jinwen Liang, Jie Zhang, Albert Zomaya
-			<br/>
-			<i>42nd IEEE International Conference on Computer Communications (<b>INFOCOM</b>)</i>, 2023.
-		</li>
-	</ul>
-</p>
+        <div class="pub-item">
+            <div class="pub-title">
+                Beluga: Block Synchronization for BFT Consensus Protocols
+                <span class="badge bg-primary badge-tag">Adopted by Sui</span>
+                <a href="https://arxiv.org/abs/2511.15517" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="note">(*random order*)</div>
+            <div class="pub-authors"><strong>Jianting Zhang</strong>, Lefteris Kokoris-Kogias, Tasos Kichidis, Arun Koshy, Mingwei Tian, Ilya Sergey, Alberto Sonnino</div>
+            <div class="pub-venue">Preprint, 2025</div>
+        </div>
+        
+        <div class="pub-item">
+            <div class="pub-title">
+                Lifefin: Escaping Mempool Explosions in DAG-based BFT
+                <a href="https://arxiv.org/abs/2511.15936" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors"><strong>Jianting Zhang</strong>, Sen Yang, Alberto Sonnino, Sebastián Loza, Aniket Kate</div>
+            <div class="pub-venue">Preprint, 2025</div>
+        </div>
 
-<tr><td colspan="3">
-<h3>2022 and before</h3>
-<p>
-	<ul>
-		<li>
-			<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9983501">Benzene: Scaling Blockchain with Cooperation-Based Sharding</a>
-			<br/>
-			Zhongteng Cai, Junyuan Liang, Wuhui Chen, Zicong Hong, Hong-Ning Dai, <b>Jianting Zhang</b>, Zibin Zheng
-			<br/>
-			<i>IEEE Transactions on Parallel and Distributed Systems (<b>TPDS</b>)</i>, 2022.
-		</li>
-		<br/>
-		<li>
-			<a href="https://dl.acm.org/doi/pdf/10.1145/3542929.3563491"> Proactive Look-Ahead Control of Transaction Flows for High-Throughput Payment Channel Network</a>
-			<br/>
-			Wuhui Chen, Xiaoyu Qiu, Zicong Hong, Zibin Zheng, Hong-Ning Dai, <b>Jianting Zhang</b>
-			<br/>
-			<i>13th ACM Symposium on Cloud Computing (<b>SoCC</b>)</i>, 2022.
-		</li>
-		<br/>
-		<li>
-			<a href="https://dl.acm.org/doi/pdf/10.1145/3404397.3404460?casa_token=cORVUGinc7MAAAAA:NNmTSDChQXOvPDEf6F72O83Eb8lBqlF3Od8S2_Ve66foL0Vb3_wGxEE1aIWaOoUNi1g-DvmlgArbeA">SkyChain: A Deep Reinforcement Learning-Empowered Dynamic Blockchain Sharding System</a> <a href="https://www.youtube.com/watch?v=Hy7Ia4ucfZc&t=2s"><span style="color:#8e8be6">[talk]</span></a>
-			<br/>
-			<span style="color:#e12749"> (Best Paper Runner-up Award)</span> 
-			<br/>
-			<b>Jianting Zhang*</b>, Zicong Hong*, Xiaoyu Qiu, Yufeng Zhan, Song Guo, Wuhui Chen
-			<br/>
-			<i>49th International Conference on Parallel Processing (<b>ICPP</b>)</i>, 2020.
-		</li>
-	</ul>
-</p>
+        <div class="pub-item">
+            <div class="pub-title">
+                No Fish Is Too Big for Flash Boys! Frontrunning on DAG-based Blockchains
+                <a href="https://eprint.iacr.org/2024/1496" class="btn-pub btn-pdf">PDF</a>
+                <a href="https://github.com/EtherCS/DAGFrontrunning-artifact" class="btn-pub btn-code">Code</a>
+            </div>
+            <div class="pub-authors"><strong>Jianting Zhang</strong>, Aniket Kate</div>
+            <div class="pub-venue">Annual Computer Security Applications Conference (ACSAC), 2025</div>
+            <div class="pub-venue">The Science of Blockchain Conference (SBC), 2025.</div>
+            <div class="pub-venue">The Latest in DeFi Research (TLDR), 2025.</div>
+        </div>
 
-</td></tr>
+        <div class="pub-item">
+            <div class="pub-title">
+                Optimal Sharding for Scalable Blockchains with Deconstructed SMR
+                <span class="badge bg-primary badge-tag">Adopted by Supra</span>
+                <a href="https://arxiv.org/abs/2406.08252" class="btn-pub btn-pdf">PDF</a>
+                <a href="https://github.com/EtherCS/arete" class="btn-pub btn-code">Code</a>
+            </div>
+            <div class="pub-authors"><strong>Jianting Zhang</strong>, Zhongtang Luo, Raghavendra Ramesh, Aniket Kate</div>
+            <div class="pub-venue">51st International Conference on Very Large Data Bases (VLDB), 2025</div>
+        </div>
 
-<tr><td colspan="3"><hr />
+        <div class="pub-item">
+            <div class="pub-title">
+                Scaling Blockchain via Dynamic Sharding
+                <a href="https://ieeexplore.ieee.org/abstract/document/11218168" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors"><strong>Jianting Zhang</strong>, Zicong Hong, Xiaoyu Qiu, Yufeng Zhan, Song Guo, Wuhui Chen</div>
+            <div class="pub-venue">IEEE Transactions on Dependable and Secure Computing (TDSC), 2025</div>
+        </div>
+        
+        <div class="pub-item">
+            <div class="pub-title">
+                RapidSnail: Improve Scalability of Blockchain under High Contention Workload
+                <a href="https://ieeexplore.ieee.org/document/11218953" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors">Junyi Wen, Wuhui Chen, <strong>Jianting Zhang</strong>, Xiao Chen, Ting Cai, Hong-Ning Dai</div>
+            <div class="pub-venue">IEEE Transactions on Computers (TC), 2025</div>
+        </div>
+        
+        <div class="pub-item">
+            <div class="pub-title">
+                Five Minutes of DDoS Brings down Tor: DDoS Attacks on the Tor Directory Protocol and Mitigations
+                <a href="https://arxiv.org/abs/2509.10755" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors">Zhongtang Luo, <strong>Jianting Zhang</strong>, Akshat Neerati, Aniket Kate</div>
+            <div class="pub-venue">Preprint, 2025</div>
+        </div>
 
-<p style="text-align:center;"> Copyright &copy; 2022-2025 Jianting Zhang, Purdue University. </p> 
+        <div class="pub-item">
+            <div class="pub-title">
+                All Our TeX Source Are Not Belong to You: PDF Obfuscation against arXiv's TeX Source Policies
+                <a href="./assets/publications/arxiv_PDF_Obfuscation.pdf" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors">Zhongtang Luo, <strong>Jianting Zhang</strong></div>
+            <div class="pub-venue">Preprint, 2025</div>
+        </div>
+
+        <div class="year-header">2024</div>
+
+        <div class="pub-item">
+            <div class="pub-title">
+                Front-running Attack in Sharded Blockchains and Fair Cross-shard Consensus
+                <a href="https://arxiv.org/abs/2306.06299" class="btn-pub btn-pdf">PDF</a>
+                <a href="https://www.youtube.com/watch?v=7CrIt6NqohE" class="btn-pub btn-talk">Talk</a>
+            </div>
+            <div class="pub-authors"><strong>Jianting Zhang</strong>, Wuhui Chen, Sifu Luo, Tiantian Gong, Zicong Hong, Aniket Kate</div>
+            <div class="pub-venue">Network and Distributed System Security Symposium (NDSS), 2024</div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title">
+                Efficient Execution of Arbitrarily Complex Cross-shard Contracts for Blockchain Sharding
+                <a href="https://ieeexplore.ieee.org/document/10436534" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors"><strong>Jianting Zhang</strong>, Wuhui Chen, Zicong Hong, Gang Xiao, Linlin Du, Zibin Zheng</div>
+            <div class="pub-venue">IEEE Transactions on Computers (TC), 2024</div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title">
+                Porygon: Scaling Blockchain via 3D Parallelism
+                <a href="https://ieeexplore.ieee.org/abstract/document/10597933" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors">Wuhui Chen, Ding Xia, Zhongteng Cai, Hong-Ning Dai, <strong>Jianting Zhang</strong>, Zicong Hong, Zibin Zheng</div>
+            <div class="pub-venue">IEEE International Conference on Data Engineering (ICDE), 2024</div>
+        </div>
+        
+        <div class="pub-item">
+            <div class="pub-title">
+                Auncel: Fair Byzantine Consensus Protocol with High Performance
+                <a href="https://ieeexplore.ieee.org/document/10621379" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors">Wuhui Chen, Yikai Feng, <strong>Jianting Zhang</strong>, Zhongteng Cai, Hong-Ning Dai, Zibin Zheng</div>
+            <div class="pub-venue">IEEE International Conference on Computer Communications (INFOCOM), 2024</div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title">
+                SPARROW: Expediting Smart Contract Execution for Blockchain Sharding via Inter-shard Caching
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10816245" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors">Junyuan Liang, Peiyuan Yao, Wuhui Chen, Zicong Hong, <strong>Jianting Zhang</strong>, Ting Cai, Min Sun, Zibin Zheng</div>
+            <div class="pub-venue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2024</div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title">
+                SmartChain: A Dynamic and Self-Adaptive Sharding Framework for IoT Blockchain
+                <a href="https://ieeexplore.ieee.org/document/10468552" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors">Ting Cai, Wuhui Chen, <strong>Jianting Zhang</strong>, Zibin Zheng</div>
+            <div class="pub-venue">IEEE Transactions on Services Computing (TSC), 2024</div>
+        </div>
+
+        <div class="year-header">2023</div>
+
+        <div class="pub-item">
+            <div class="pub-title">
+                PROPHET: Conflict-Free Sharding Blockchain via Byzantine-Tolerant Deterministic Ordering
+                <a href="https://arxiv.org/abs/2304.08595" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors">Zicong Hong, Song Guo, Enyuan Zhou, <strong>Jianting Zhang</strong>, Wuhui Chen, Jinwen Liang, Jie Zhang, Albert Zomaya</div>
+            <div class="pub-venue">IEEE International Conference on Computer Communications (INFOCOM), 2023</div>
+        </div>
+        
+        <div class="pub-item">
+            <div class="pub-title">
+                Enhancing Blockchain Performance via On-chain and Off-chain Collaboration
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-48421-6_27" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors">Wuhui Chen, Zhaoxian Yang, <strong>Jianting Zhang</strong>, Junyuan Liang, Qilin Sun, Fan Zhou</div>
+            <div class="pub-venue">International Conference on Service-Oriented Computing (ICSOC), 2023</div>
+        </div>
+
+        <div class="year-header">2022 & Before</div>
+
+        <div class="pub-item">
+            <div class="pub-title">
+                Benzene: Scaling Blockchain with Cooperation-Based Sharding
+                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9983501" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors">Zhongteng Cai, Junyuan Liang, Wuhui Chen, Zicong Hong, Hong-Ning Dai, <strong>Jianting Zhang</strong>, Zibin Zheng</div>
+            <div class="pub-venue">IEEE Transactions on Parallel and Distributed Systems (TPDS), 2022</div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title">
+                Proactive Look-Ahead Control of Transaction Flows for High-Throughput Payment Channel Network
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3542929.3563491" class="btn-pub btn-pdf">PDF</a>
+            </div>
+            <div class="pub-authors">Wuhui Chen, Xiaoyu Qiu, Zicong Hong, Zibin Zheng, Hong-Ning Dai, <strong>Jianting Zhang</strong></div>
+            <div class="pub-venue">ACM Symposium on Cloud Computing (SoCC), 2022</div>
+        </div>
+
+        <div class="pub-item">
+            <div class="pub-title">
+                SkyChain: A Deep Reinforcement Learning-Empowered Dynamic Blockchain Sharding System
+                <span class="badge bg-warning text-dark badge-tag">Best Paper Runner-up</span>
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3404397.3404460" class="btn-pub btn-pdf">PDF</a>
+                <a href="https://www.youtube.com/watch?v=Hy7Ia4ucfZc" class="btn-pub btn-talk">Talk</a>
+            </div>
+            <div class="pub-authors"><strong>Jianting Zhang*</strong>, Zicong Hong*, Xiaoyu Qiu, Yufeng Zhan, Song Guo, Wuhui Chen</div>
+            <div class="pub-venue">International Conference on Parallel Processing (ICPP), 2020</div>
+        </div>
+
+    </div>
+    <footer class="text-center text-muted mt-5 small">
+        <p>Copyright © 2025 Jianting Zhang.</p>
+    </footer>
+</div>
 
 </body>
-
 </html>

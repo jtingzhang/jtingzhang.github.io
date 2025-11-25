@@ -1,187 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jianting Zhang | Purdue University</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head> 
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<title>Jianting Zhang</title>
-<link rel ="stylesheet" href ="my.css" type="text/css" />
-<script src="/header.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; color: #333; line-height: 1.6; }
+        a { text-decoration: none; color: #0d6efd; }
+        a:hover { text-decoration: underline; }
+        
+        /* Sidebar */
+        .sidebar { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; }
+        .profile-img { width: 180px; height: 180px; object-fit: cover; border-radius: 50%; margin-bottom: 1.5rem; border: 4px solid #f8f9fa; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        
+        /* Main Content */
+        .main-content { background: #fff; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .section-title { border-bottom: 2px solid #f0f0f0; padding-bottom: 0.5rem; margin-bottom: 1.5rem; margin-top: 2.5rem; font-weight: 700; color: #1a1a1a; }
+        .first-section { margin-top: 0; }
+        
+        /* Publications */
+        .pub-item { margin-bottom: 1.5rem; }
+        .pub-title { font-weight: 600; font-size: 1.05rem; color: #000; display: block; margin-bottom: 4px; }
+        .pub-authors { color: #555; font-size: 0.95rem; margin-bottom: 4px; }
+        .pub-venue { font-style: italic; color: #0056b3; font-size: 0.95rem; }
+        
+        /* Badges & Buttons */
+        .badge-impact { font-size: 0.75rem; vertical-align: middle; margin-left: 5px; padding: 4px 8px; }
+        .btn-pub { font-size: 0.75rem; padding: 1px 8px; margin-left: 6px; border-radius: 4px; text-decoration: none !important; display: inline-block; vertical-align: middle; }
+        .btn-pdf { background-color: #dc3545; color: white; border: none; }
+        .btn-pdf:hover { background-color: #bb2d3b; color: white; }
+        .btn-code { background-color: #212529; color: white; border: none; }
+        .btn-code:hover { background-color: #424649; color: white; }
+        
+        /* Link to Full List */
+        .view-all-link { font-weight: 600; color: #0d6efd; display: inline-flex; align-items: center; margin-top: 1rem; }
+        .view-all-link:hover { color: #0a58ca; text-decoration: none; }
+    </style>
 </head>
-
-
 <body>
-<table id= mainTable cellspacing ="0" cellpadding="10">
-<tr>
-		<td>
-			<div class='div1' style="width:230px; height:230px; border-radius:100%; overflow:hidden;"> 
-				<img src="./images/jianting_bio.png" alt="Jianting Zhang's Photo"/>
-			</div>
-		</td>
-		<td id ="bigCol">
-			<h2>Jianting Zhang</h2>
-			<p>
-			Ph.D. Student<br/>
-			Department of Computer Science<br/>
-			Purdue University
-			</p>
-			<p>
-			Email: antfinancialyujian [at] gmail [dot] com
-      		</p>
-      
-			<p>
-				<a href="https://scholar.google.com/citations?user=lJcpO1YAAAAJ&hl=en&oi=sra">Google Scholar</a>
-				&nbsp;&nbsp; <a href="https://github.com/EtherCS">Github</a> &nbsp;&nbsp;&nbsp; <a href="https://www.linkedin.com/in/jianting-zhang-7538a7292/">LinkedIn</a>
-			</p>
-      
-     </td>
-</tr>
-</table>
 
-<hr/>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="sidebar sticky-top" style="top: 20px;">
+                <img src="./assets/img/profile.png" alt="Jianting Zhang" class="profile-img">
+                <h2 class="fw-bold">Jianting Zhang</h2>
+                <p class="text-muted mb-3">Ph.D. Student at Purdue University</p>
+                <div class="d-grid gap-2 mb-4">
+                    <a href="mailto:antfinancialyujian@gmail.com" class="btn btn-primary btn-sm"><i class="fas fa-envelope me-2"></i> Email Me: antfinancialyujian@gmail.com</a>
+                </div>
+                <div class="mb-4">
+                    <a href="https://scholar.google.com/" target="_blank" class="text-secondary mx-2"><i class="fas fa-graduation-cap fa-lg"></i></a>
+                    <a href="https://github.com/jtingzhang" target="_blank" class="text-secondary mx-2"><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://linkedin.com/" target="_blank" class="text-secondary mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
 
-<tr><td  colspan="3"> 
- <h2>Bio</h2>
+        <div class="col-lg-8">
+            <div class="main-content">
+                <section>
+                    <h3 class="section-title first-section">About Me</h3>
+                    <p>
+                        I am a Ph.D. student in the Department of Computer Science at <strong>Purdue University</strong>, advised by <a href="https://www.cs.purdue.edu/homes/akate/">Prof. Aniket Kate</a> at FreedomLab. Previously, I obtained my Bachelor's and Master's degrees from Sun Yat-sen University.
+                    </p>
+                    <p>
+                        My primary research interest is the <strong>consensus problem of distributed systems/blockchains</strong>. I am dedicated to developing scalable and secure consensus protocols toward supporting more emerging decentralized applications and mitigating new security issues, such as MEV.
+                    </p>
+                </section>
 
-<p>
-I am a Ph.D. student in the department of Computer Science at Purdue University. I am very fortunate to be advised by 
-<a href="https://www.cs.purdue.edu/homes/akate/">Prof. Aniket Kate</a>
-at 
-<a href="https://freedom.cs.purdue.edu/">FreedomLab</a>. 
-Previously, I obtained my Bachalor's and Master's degrees from Sun Yat-sen University, working with <a href="https://sse.sysu.edu.cn/teacher/159">Prof. Wuhui Chen</a> and <a href="https://sse.sysu.edu.cn/teacher/100">Prof. Zibin Zheng</a>.
-</p>
+                <section>
+                    <h3 class="section-title">Selected Publications</h3>
+                    
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            Beluga: Block Synchronization for BFT Consensus Protocols
+                            <span class="badge rounded-pill text-bg-primary badge-impact">Adopted by Sui</span>
+                            <a href="https://arxiv.org/abs/2511.15517" class="btn-pub btn-pdf">PDF</a>
+                        </div>
+                        <div class="note">(*random order*)</div>
+                        <div class="pub-authors"><strong>Jianting Zhang</strong>, Lefteris Kokoris-Kogias, Tasos Kichidis, Arun Koshy, Mingwei Tian, Ilya Sergey, Alberto Sonnino</div>
+                        <div class="pub-venue">Preprint</div>
+                    </div>
+        
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            Lifefin: Escaping Mempool Explosions in DAG-based BFT
+                            <a href="https://arxiv.org/abs/2511.15936" class="btn-pub btn-pdf">PDF</a>
+                        </div>
+                        <div class="pub-authors"><strong>Jianting Zhang</strong>, Sen Yang, Alberto Sonnino, Sebastián Loza, Aniket Kate</div>
+                        <div class="pub-venue">Preprint, 2025</div>
+                    </div>
 
-<p>
-My primary research interest is the consensus problem of distributed systems/blockchains. I am dedicated to developing scalable and secure consensus protocols toward supporting more emerging decentralized applications and mitigating new security issues, such as MEV. My mission is to make distributed systems more efficient and reliable. Feel free to reach out if you are interested in my work and collaborating with me!
-</p>
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            No Fish Is Too Big for Flash Boys! Frontrunning on DAG-based Blockchains
+                            <a href="https://eprint.iacr.org/2024/1496" class="btn-pub btn-pdf">PDF</a>
+                            <a href="https://github.com/EtherCS/DAGFrontrunning-artifact" class="btn-pub btn-code">Code</a>
+                        </div>
+                        <div class="pub-authors"><strong>Jianting Zhang</strong>, Aniket Kate</div>
+                        <div class="pub-venue">Annual Computer Security Applications Conference (ACSAC), 2025</div>
+                        <div class="pub-venue">The Science of Blockchain Conference (SBC), 2025.</div>
+                        <div class="pub-venue">The Latest in DeFi Research (TLDR), 2025.</div>
+                    </div>
 
-<p>
-In addition to doing research, I also enjoy singing. My friends call me Purdue's
-<a href="https://en.wikipedia.org/wiki/Eason_Chan">Eason Chan</a>. My famous song - <a href="https://www.youtube.com/watch?v=c-2UG5q9qGA">Half Moon Serenade</a>, however, is created by another Cantonese singer <a href="https://en.wikipedia.org/wiki/Hacken_Lee">Hacken Lee</a>.
-</p>
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            Optimal Sharding for Scalable Blockchains with Deconstructed SMR
+                            <span class="badge rounded-pill text-bg-primary badge-impact">Adopted by Supra</span>
+                            <a href="https://arxiv.org/abs/2406.08252" class="btn-pub btn-pdf">PDF</a>
+                            <a href="https://github.com/EtherCS/arete" class="btn-pub btn-code">Code</a>
+                        </div>
+                        <div class="pub-authors"><strong>Jianting Zhang</strong>, Zhongtang Luo, Raghavendra Ramesh, Aniket Kate</div>
+                        <div class="pub-venue">51st International Conference on Very Large Data Bases (VLDB), 2025</div>
+                    </div>
 
-<tr><td colspan="3"><hr />
-<h2>Preprints</h2>
-<p>
-	<ul>
-		<li>
-			<a href="http://jtingzhang.github.io/publications/lifefin.pdf">Lifefin: Escaping Mempool Explosions in DAG-based BFT </a>
-			<br/>
-			<b>Jianting Zhang</b>, Sen Yang, Alberto Sonnino, Sebastián Loza, Aniket Kate
-		</li>
-		<br/>
-		<li>
-			<a href="http://jtingzhang.github.io/publications/beluga.pdf">Beluga: Block Synchronization for BFT Consensus Protocols </a>
-			<br/>
-			<span style="color:#e12749"> (Adopted by Sui)</span> 
-			<br/>
-			<b>Jianting Zhang</b>, Lefteris Kokoris-Kogias, Tasos Kichidis, Arun Koshy, Mingwei Tian, Ilya Sergey, Alberto Sonnino
-			<br/>
-			<i>(*random order*)</i>
-		</li>
-		<br/>
-		<li>
-			<a href="https://arxiv.org/abs/2509.10755">Five Minutes of DDoS Brings down Tor: DDoS Attacks on the Tor Directory Protocol and Mitigations</a>
-			<br/>
-			Zhongtang Luo, <b>Jianting Zhang</b>, Akshat Neerati, Aniket Kate
-		</li>
-		<br/>
-		<li>
-			<a href="http://jtingzhang.github.io/publications/arxiv_PDF_Obfuscation.pdf">All Our TeX Source Are Not Belong to You: PDF Obfuscation against arXiv's TeX Source Policies</a>
-			<br/>
-			Zhongtang Luo, <b>Jianting Zhang</b>
-		</li>
-	</ul>
-</p>
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            Front-running Attack in Sharded Blockchains and Fair Cross-shard Consensus
+                            <a href="https://arxiv.org/abs/2306.06299" class="btn-pub btn-pdf">PDF</a>
+                        </div>
+                        <div class="pub-authors"><strong>Jianting Zhang</strong>, Wuhui Chen, Sifu Luo, Tiantian Gong, Zicong Hong, Aniket Kate</div>
+                        <div class="pub-venue">Network and Distributed System Security Symposium (NDSS), 2024</div>
+                    </div>
 
-<tr><td colspan="3"><hr />
-<h2>Selected Publications <a href="http://jtingzhang.github.io/publications"><span style="color:#8684cf">[Full Publications]</span></a></h2> 
-<p>
-	<ul>
-		<li>
-			<a href="https://eprint.iacr.org/2024/1496">No Fish Is Too Big for Flash Boys! Frontrunning on DAG-based Blockchains</a> <a href="https://github.com/EtherCS/DAGFrontrunning-artifact"><span style="color:#8e8be6">[code]</span></a>
-			<br/>
-			<b>Jianting Zhang</b>, Aniket Kate
-			<br/>
-			<i>Annual Computer Security Applications Conference (<b>ACSAC</b>)</i>, 2025.
-			<br/>
-			<i>The Science of Blockchain Conference (<b>SBC</b>)</i>, 2025.
-			<br/>
-			<i>The Latest in DeFi Research (<b>TLDR</b>)</i>, 2025.
-		</li>
-		<br/>
-		<li>
-			<a href="https://arxiv.org/abs/2406.08252">Optimal Sharding for Scalable Blockchains with Deconstructed SMR</a> <a href="https://github.com/EtherCS/arete"><span style="color:#8e8be6">[code]</span></a>
-			<br/>
-			<span style="color:#e12749"> (Adopted by Supra)</span> 
-			<br/>
-			<b>Jianting Zhang</b>, Zhongtang Luo, Raghavendra Ramesh, Aniket Kate
-			<br/>
-			<i>51st International Conference on Very Large Data Bases (<b>VLDB</b>)</i>, 2025. 
-		</li>
-		<br/>
-		<li>
-			<a href="https://arxiv.org/abs/2306.06299">Front-running Attack in Sharded Blockchains and Fair Cross-shard Consensus</a> <a href="https://www.youtube.com/watch?v=7CrIt6NqohE"><span style="color:#8e8be6">[talk]</span></a>
-			<br/>
-			<b>Jianting Zhang</b>, Wuhui Chen, Sifu Luo, Tiantian Gong, Zicong Hong, Aniket Kate
-			<br/>
-			<i>31st Network and Distributed System Security Symposium (<b>NDSS</b>)</i>, 2024. 
-		</li>
-	</ul>
-</p>
+                    <div class="mt-5 pt-3 border-top text-center">
+                        <a href="publications.html" class="view-all-link btn btn-outline-primary px-4">
+                            View Full Publication List <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </section>
 
-<tr><td colspan="3"><hr />
-	<h2>Awards</h2>
-	<p>
-		<ul>
-			<li>
-				Graduate Student with Honors
-			</li>
-			<li>
-				2020 ICPP Best Paper Award Runner-up
-			</li>
-			<li>
-				2020 National Scholarship for Graduate Students
-			</li>
-		</ul>
-	</p>
+                <section>
+                    <h3 class="section-title">Experience</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><strong>Research Intern</strong>, Mysten Labs (May 2025 - Aug 2025)</li>
+                        <li class="mb-2"><strong>Research Intern</strong>, Alibaba DAMO Academy (May 2020 - Aug 2020)</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3 class="section-title">Honors & Awards</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-trophy text-warning me-2"></i> ICPP 2020 Best Paper Award Runner-up</li>
+                        <li><i class="fas fa-award text-warning me-2"></i> Graduate Student with Honors</li>
+                        <li><i class="fas fa-award text-warning me-2"></i> 2020 National Scholarship for Graduate Students</li>
+                    </ul>
+                </section>
 
-<tr><td colspan="3"><hr />
-	<h2>Experience</h2>
-	<p>
-		<ul>
-			<li> Research Intern, <a href="https://www.mystenlabs.com/">Mysten Labs</a>, Remote, May 2025 - Aug. 2025 <br>
-			</li>
-			<li> Research Intern, <a href="https://damo.alibaba.com/">Alibaba DAMO Academy</a>, Beijing, May 2020 - Aug. 2020 <br>
-			</li>
-		</ul>
-	</p>
+                <section>
+                    <h3 class="section-title">Misc</h3>
+                    <p class="text-muted">In addition to research, I enjoy singing. My friends call me "Purdue's Eason Chan."</p>
+                </section>
 
-<tr><td colspan="3"><hr />
-	<h2>Services</h2>
-	<p>
-		<ul>
-			<li> Reviewer <br>
-				- IEEE/ACM Transactions on Networking <br>
-				- IEEE Transactions on Services Computing <br>
-				- IEEE Transactions on Information Forensics and Security <br>
-				- ACM Transactions on Privacy and Security <br>
-				- ACM Transactions on Internet Technology <br>
-			</li>
-			<br/>
-			<li> Sub-Reviewer <br>
-				- IEEE ICDCS 2025 <br>
-				- FC 2025 <br>
-			</li>
-		</ul>
-	</p>
-
-<tr><td colspan="3"><hr />
-
-</td></tr>
-
-<p style="text-align:center;"> Copyright &copy; 2022-2025 Jianting Zhang, Purdue University. </p> 
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-muted mt-5 small">
+        <p>Copyright © 2025 Jianting Zhang. <br>Last updated: Nov 2025.</p>
+    </footer>
+</div>
 
 </body>
-
 </html>
